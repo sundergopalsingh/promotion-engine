@@ -23,13 +23,13 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class Cart {
 
-	private List<Character> skuIds;
+	private List<Sku> skuIds;
 
 	public Cart() {
-		skuIds = new ArrayList<Character>();
+		skuIds = new ArrayList<Sku>();
 	}
 
-	public Cart addItem(Character item) {
+	public Cart addItem(Sku item) {
 		this.skuIds.add(item);
 		return this;
 	}
